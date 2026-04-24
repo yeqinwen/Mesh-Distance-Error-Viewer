@@ -6,6 +6,9 @@ ms = pymeshlab.MeshSet()
 ms.load_new_mesh('star300.obj')
 ms.load_new_mesh('scan.obj')
 
+m = ms.current_mesh()
+scan_v, scan_f = m.vertex_matrix(), m.face_matrix()
+
 # hausdorff_distance
 ms.get_hausdorff_distance(targetmesh=0, sampledmesh=1, samplevert=True)
 dis = ms.mesh(1).vertex_scalar_array()
@@ -13,18 +16,15 @@ dis = ms.mesh(1).vertex_scalar_array()
 vmin = 0
 vmax = np.percentile(dis, 95)  # p95 or p99
 
-m = ms.current_mesh()
-scan_v, scan_f = m.vertex_matrix(), m.face_matrix()
-
 ps.init()
 body = ps.register_surface_mesh("scan", scan_v, scan_f, edge_width=0.001, smooth_shade=True)
 body.add_scalar_quantity("distance", dis,
                          defined_on="vertices",
-                         enabled=True,
                          # vminmax=[vmin, vmax],
                          vminmax=[0, 0.008],
-                         cmap="jet",  # my_colormap
-                         onscreen_colorbar_enabled=True  # show the colorbar
+                         cmap="jet",  # colormap
+                         onscreen_colorbar_enabled=True,  # show the colorbar
+                         enabled=True,
                          )
 
 # ps.set_view_projection_mode("orthographic")  # orthographic  perspective
