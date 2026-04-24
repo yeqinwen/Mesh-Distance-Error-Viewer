@@ -17,8 +17,8 @@ vmin = 0
 vmax = np.percentile(dis, 95)  # p95 or p99
 
 ps.init()
-body = ps.register_surface_mesh("scan", scan_v, scan_f, edge_width=0.001, smooth_shade=True)
-body.add_scalar_quantity("distance", dis,
+ps_scan = ps.register_surface_mesh("scan", scan_v, scan_f, edge_width=0.001, smooth_shade=True)
+ps_scan.add_scalar_quantity("distance", dis,
                          defined_on="vertices",
                          # vminmax=[vmin, vmax],
                          vminmax=[0, 0.008],
