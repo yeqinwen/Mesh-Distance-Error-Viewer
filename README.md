@@ -1,6 +1,6 @@
 
 
-# Visualize mesh distance error using polyscope and pymeshlab
+# Visualize mesh distance error using Polyscope and Pymeshlab
 
 ---
 Visualize mesh
