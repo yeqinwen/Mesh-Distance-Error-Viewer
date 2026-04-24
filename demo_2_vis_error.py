@@ -1,5 +1,5 @@
-import pymeshlab
 import numpy as np
+import pymeshlab
 import polyscope as ps
 
 ms = pymeshlab.MeshSet()
