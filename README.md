@@ -1,2 +1,11 @@
-# Mesh-Distance-Error-Viewer
-Visualizing the distance error between two 3D human body meshes
+
+
+
+# 1. Visualize mesh
+
+![Snipaste_2026-04-24_22-35-40.jpg](assets/Snipaste_2026-04-24_22-35-40.jpg)
+
+
+# 2. Visualize distance error
+
+![Snipaste_2026-04-24_22-36-45.jpg](assets/Snipaste_2026-04-24_22-36-45.jpg)
