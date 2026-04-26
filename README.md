@@ -1,12 +1,17 @@
 
 
-# Visualize mesh distance error using Polyscope and Pymeshlab
+# Visualize Hausdorff Distance
+
+Visualize Hausdorff Distance between two meshes using Polyscope and Pymeshlab
+
+1. [Pymeshlab](https://pymeshlab.readthedocs.io/en/latest/)
+2. [Polyscope](https://polyscope.run/py/)
 
 ---
 Visualize mesh
 
 ![Snipaste_2026-04-24_22-35-40.jpg](assets/Snipaste_2026-04-24_22-35-40.jpg)
 
-Visualize distance error
+Visualize Hausdorff Distance
 
 ![Snipaste_2026-04-24_22-36-45.jpg](assets/Snipaste_2026-04-24_22-36-45.jpg)
