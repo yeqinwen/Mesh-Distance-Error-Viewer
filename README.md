@@ -2,8 +2,7 @@
 
 # Visualize Hausdorff Distance
 
-Visualize Hausdorff Distance between two meshes using Polyscope and Pymeshlab
-
+Visualize Hausdorff Distance between two meshes using Polyscope and Pymeshlab(Python3.10)
 1. [Pymeshlab](https://pymeshlab.readthedocs.io/en/latest/)
 2. [Polyscope](https://polyscope.run/py/)
 
